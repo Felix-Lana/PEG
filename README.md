@@ -16,14 +16,14 @@ It specifically addresses two clinically common challenges in real-world Scheimp
 1. **Specular highlight interference**
 2. **Lens invisibility / weak lens visibility**
 
-The model performs **fully automatic end-to-end inference** and does **not rely on rule-based post-processing** in the main pipeline. An **optional SAM-assisted local editing module** is also provided for rare long-tail failure correction and annotation refinement. :contentReference[oaicite:3]{index=3}
+The model performs **fully automatic end-to-end inference** and does **not rely on rule-based post-processing** in the main pipeline. An **optional SAM-assisted local editing module** is also provided for rare long-tail failure correction and annotation refinement. 
 
 ---
 
 ## News
 
 - **[Accepted & Published]** Our paper has been accepted by and published in **Knowledge-Based Systems**.
-- Code, trained weights, training/inference scripts, and evaluation utilities are released for reproducibility. :contentReference[oaicite:4]{index=4} :contentReference[oaicite:5]{index=5}
+- Code, trained weights, training/inference scripts, and evaluation utilities are released for reproducibility. :contentReference[oaicite:4]{index=4}
 
 ---
 
