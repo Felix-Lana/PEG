@@ -23,7 +23,7 @@ The model performs **fully automatic end-to-end inference** and does **not rely 
 ## News
 
 - **[Accepted & Published]** Our paper has been accepted by and published in **Knowledge-Based Systems**.
-- Code, trained weights, training/inference scripts, and evaluation utilities are released for reproducibility. :contentReference[oaicite:4]{index=4}
+- Code, trained weights, training/inference scripts, and evaluation utilities are released for reproducibility. 
 
 ---
 
