@@ -29,9 +29,7 @@ The model performs **fully automatic end-to-end inference** and does **not rely 
 
 ## Abstract
 
-Rotating Scheimpflug anterior segment imaging is an important tool for quantitative analysis of corneal and anterior chamber structures. However, stable multi-structure segmentation under real clinical conditions remains difficult because of substantial distribution shifts. Specular highlights may weaken boundary evidence, while poor lens visibility or lens absence may disturb structural priors and lead to systematic errors at shared boundaries.
-
-To address these issues, we propose **PEGUNet**, a perception-enhanced gated segmentation network built on **UNet 3+** for four-class joint segmentation of Scheimpflug optical section images. PEGUNet introduces a **perception module** to jointly model spatial, frequency-domain, and curvature-guided information, and a **gated multi-scale fusion module** to suppress unreliable responses across scales. On a private clinical dataset of **787 eyes**, PEGUNet achieved a **mean Dice of 0.9782** and a **mean HD95 of 1.5679** on the standard test set, while also showing consistent gains on an independent challenging subset. :contentReference[oaicite:6]{index=6}
+Rotating Scheimpflug anterior segment imaging is an important tool for quantitative analysis of corneal and anterior chamber structures. However, stable multi-structure segmentation under real clinical conditions remains difficult because of substantial distribution shifts. Specular highlights may weaken boundary evidence, while poor lens visibility or lens absence may disturb structural priors and lead to systematic errors at shared boundaries. To address these issues, we propose **PEGUNet**, a perception-enhanced gated segmentation network built on **UNet 3+** for four-class joint segmentation of Scheimpflug optical section images. PEGUNet introduces a **perception module** to jointly model spatial, frequency-domain, and curvature-guided information, and a **gated multi-scale fusion module** to suppress unreliable responses across scales. On a private clinical dataset of **787 eyes**, PEGUNet achieved a **mean Dice of 0.9782** and a **mean HD95 of 1.5679** on the standard test set, while also showing consistent gains on an independent challenging subset.
 
 ---
 
@@ -42,7 +40,7 @@ To address these issues, we propose **PEGUNet**, a perception-enhanced gated seg
 - **Spatial + frequency + curvature** collaborative representation
 - **Gated multi-scale fusion** for improved shared-boundary consistency
 - **Optional SAM-assisted interactive refinement** for rare hard cases
-- **Full training / inference / evaluation pipeline** for reproducibility :contentReference[oaicite:7]{index=7} :contentReference[oaicite:8]{index=8}
+- **Full training / inference / evaluation pipeline** for reproducibility 
 
 ---
 
@@ -62,14 +60,14 @@ The perception module enhances feature discriminability by jointly modeling thre
 - **Curvature Perception Unit (CPU)**  
   Incorporates first- and second-order structural cues to improve continuity and reduce false boundary activation caused by highlights.
 
-These three branches are adaptively fused with attention to produce perception-enhanced features. :contentReference[oaicite:9]{index=9}
+These three branches are adaptively fused with attention to produce perception-enhanced features.
 
 ### 2. Multi-Scale Gated Fusion
 Before full-scale aggregation, PEGUNet applies a gated fusion strategy to suppress noisy or unreliable cross-scale responses. This helps reduce:
 - artifact propagation,
 - cross-class confusion,
 - boundary inconsistency,
-- topology errors near shared interfaces. :contentReference[oaicite:10]{index=10}
+- topology errors near shared interfaces. 
 
 ---
 
@@ -85,7 +83,7 @@ PEGUNet achieved:
 - **Average HD95:** 1.5679
 - **Average ASSD:** 0.3599
 
-These results outperformed several strong CNN, Transformer, and Mamba-based baselines under a unified training and evaluation protocol. :contentReference[oaicite:11]{index=11}
+These results outperformed several strong CNN, Transformer, and Mamba-based baselines under a unified training and evaluation protocol.
 
 ### Challenging Clinical Cases
 In addition to routine testing, the paper evaluates robustness on a held-out challenging subset containing:
@@ -93,7 +91,7 @@ In addition to routine testing, the paper evaluates robustness on a held-out cha
 - **Lens-invisible subset (M): 41 cases**
 - **Total challenging subset (C): 102 cases**
 
-PEGUNet maintains consistent gains under these clinically relevant distribution shifts, showing improved robustness to highlight interference and lens visibility degradation. :contentReference[oaicite:12]{index=12}
+PEGUNet maintains consistent gains under these clinically relevant distribution shifts, showing improved robustness to highlight interference and lens visibility degradation. 
 
 ---
 
